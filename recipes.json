@@ -1,0 +1,19 @@
+{
+    "manifest": {
+        "bundles": {
+            "InterInvest\\ApiKeycloakAuthenticatorBundle\\ApiKeycloakAuthenticatorBundle": ["all"]
+        },
+        "copy-from-recipe": {
+            "api_keykloak_config/config/packages/": "%CONFIG_DIR%"
+        },
+        "env": {
+            "API_KEYCLOAK_URL": "https://connexion-dev.inter-invest.fr",
+            "KEYCLOAK_REALM_INTERINVEST_INVESTISSEUR_CLIENT_ID": "",
+            "KEYCLOAK_REALM_INTERINVEST_INVESTISSEUR_CLIENT_SECRET": "",
+            "KEYCLOAK_REALM_INTERINVEST_INVESTISSEUR_GRANT_TYPE": "client_credentials",
+            "KEYCLOAK_REALM_INTERINVEST_PARTENAIRE_CLIENT_ID": "",
+            "KEYCLOAK_REALM_INTERINVEST_PARTENAIRE_CLIENT_SECRET": "",
+            "KEYCLOAK_REALM_INTERINVEST_PARTENAIRE_GRANT_TYPE": "client_credentials"
+        }
+    }
+}
